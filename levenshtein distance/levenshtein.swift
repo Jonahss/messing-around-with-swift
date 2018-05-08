@@ -27,7 +27,7 @@ func levenshteinDistance (_ a:String, _ b:String) -> Int {
     if (savedDistances[a] == nil) {
       savedDistances[a] = [String : Int]()
     }
-    savedDistances[a]?[b] = distance
+    savedDistances[a]![b] = distance
     return distance
 }
 
